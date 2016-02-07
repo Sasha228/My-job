@@ -1,0 +1,40 @@
+.m {
+
+    position: relative;
+    float: left;
+    margin:5px;
+}
+
+.s {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    float: left;
+    margin: 10px;
+}
+
+.r {
+
+    position: relative;
+    float: right;
+    margin:5px;
+}
+
+hr {
+    border-color: blue;
+    width: 900px;
+
+}
+
+.select-all:checked + span {
+    color: red;
+}
+
+.str-limit {
+    cursor: default;
+    white-space: nowrap; /* Çàïðåùàåì ïåðåíîñ ñòðîê */
+    overflow: hidden; /* Îáðåçàåì âñå, ÷òî íå ïîìåùàåòñÿ â îáëàñòü */
+    padding: 5px; /* Ïîëÿ âîêðóã òåêñòà */
+    text-overflow: ellipsis; /* Äîáàâëÿåì ìíîãîòî÷èå */
+    height: 150px;
+}

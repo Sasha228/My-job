@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14.09.2015</title>
+    <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="yyy.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="mmm.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+</head>
+<body>
+
+
+<div style="width: 750px; height: 100px; margin: 150px auto 30px;">
+    <p style="text-align: center">Записки</p>
+    <button class="btn btn-success m add-note" ><span class="glyphicon glyphicon-plus"></span></button>
+    <button class="btn btn-danger m clear-note" ><span class="glyphicon glyphicon-minus"></span></button>
+    
+       <div class="input-group m" style="width: 500px !important;">   
+            <span class="input-group-addon" id="sizing-addon2">Search</span>
+            <input type="text" class="form-control search" aria-describedby="sizing-addon2">
+       </div>
+    <div class="checkbox r">
+        <label>
+            <input type="checkbox" class="select-all" disabled="true"><span>Check me out</span>
+        </label>
+    </div>
+</div>
+
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content" >
+                <div class="modal-header" >
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div  class="hidden" data-title="Добавление Заметки" data-popup="add">
+    <h4>Заголовок:</h4>
+         <div class="form-group">
+              <input type="text" name="title" class="form-control">
+         </div>
+    <h4>Описание:</h4>
+         <div class="form-group">
+              <textarea style="resize: none" rows="10" cols="60" name="note" class="form-control"></textarea>
+         </div>
+    <button type="button" class="btn btn-success add"  >Добавить</button>
+</div>
+
+
+<div  class="hidden" data-title="Редактирование Заметки" data-popup="edit">
+    <h4>Заголовок:</h4>
+         <div class="form-group">
+              <input type="text" name="title" class="form-control">
+         </div>
+    <h4>Описание:</h4>
+         <div class="form-group">
+              <textarea style="resize: none" rows="10" cols="60" name="note" class="form-control"></textarea>
+         </div>
+    <button type="button" class="btn btn-success add"  >Добавить</button>
+</div>
+
+
+
+<hr>
+
+
+<div class="notes" style="padding: 50px; ">
+        <h1 class="goOut">Нет записок</h1>
+        <h1 class="empty-search hidden">По запросу в записях ничего не найдено!</h1>
+    </div>
+
+
+<div class="hidden" data-tpl="note">
+        <div class="panel panel-primary s">
+            <div class="checkbox r">
+                <input type="checkbox" class="select-note">
+            </div>
+            <div class="panel-heading">
+                <h3 class="panel-title title ">Panel title</h3>
+            </div>
+            <div class="panel-body descr str-limit" title="">
+                Panel content
+            </div>
+        </div>  
+    </div>
+
+
+
+
+</body>
+</html>
